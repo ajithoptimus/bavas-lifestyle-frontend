@@ -1,0 +1,59 @@
+[
+  {
+    "id": "prod_1",
+    "name": "Classic Men's Premium Oxford Shirt",
+    "slug": "classic-mens-premium-oxford-shirt",
+    "description": "A timeless classic for any wardrobe. This premium oxford shirt offers comfort and style for everyday wear or special occasions.",
+    "price": 24.99,
+    "originalPrice": 34.99,
+    "category": "Men",
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e32f85e2c?w=800&q=80"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["White", "Light Blue", "Navy"],
+    "inStock": true,
+    "isNewArrival": false,
+    "rating": 4.8,
+    "reviewsCount": 124,
+    "createdAt": "2023-01-15T00:00:00Z"
+  },
+  {
+    "id": "prod_2",
+    "name": "World Cup Edition Jersey Style Tee",
+    "slug": "world-cup-edition-jersey-tee",
+    "description": "Celebrate the football fever in style with our premium lifestyle tee inspired by classic football jerseys.",
+    "price": 19.99,
+    "category": "Men",
+    "collection": "World Cup",
+    "images": [
+      "https://images.unsplash.com/photo-1508215885820-4585e56109c8?w=800&q=80"
+    ],
+    "sizes": ["M", "L", "XL", "XXL"],
+    "colors": ["Maroon", "Gold", "White"],
+    "inStock": true,
+    "isNewArrival": true,
+    "rating": 4.9,
+    "reviewsCount": 56,
+    "createdAt": "2023-11-01T00:00:00Z"
+  },
+  {
+    "id": "prod_3",
+    "name": "Women's Elegant Summer Dress",
+    "slug": "womens-elegant-summer-dress",
+    "description": "Flowy, elegant, and perfectly affordable. This dress is designed to make you stand out at any family gathering.",
+    "price": 29.99,
+    "originalPrice": 45.99,
+    "category": "Women",
+    "images": [
+      "https://images.unsplash.com/photo-1515347619362-7101e4ee4d3c?w=800&q=80"
+    ],
+    "sizes": ["XS", "S", "M", "L"],
+    "colors": ["Floral Print", "Deep Maroon"],
+    "inStock": true,
+    "isNewArrival": true,
+    "rating": 4.7,
+    "reviewsCount": 89,
+    "createdAt": "2023-10-20T00:00:00Z"
+  }
+]
