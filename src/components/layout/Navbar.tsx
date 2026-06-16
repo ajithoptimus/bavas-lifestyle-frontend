@@ -14,7 +14,7 @@ export function Navbar() {
         <div className="flex items-center h-20 gap-8">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <h1 className="font-bold text-2xl tracking-tight text-primary">BAVAS</h1>
+            <h1 className="font-black text-2xl tracking-tight text-primary">BAVAS <span className="text-foreground">LIFESTYLE</span></h1>
           </Link>
 
           {/* Desktop Links */}
