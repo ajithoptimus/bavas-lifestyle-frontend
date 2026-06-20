@@ -4,9 +4,11 @@ import { useState } from "react";
 import Link from "next/link";
 import { Search, User, Heart, ShoppingBag, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useCart } from "@/context/CartContext";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { cartCount } = useCart();
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-background border-b border-border shadow-sm">
@@ -48,13 +50,17 @@ export function Navbar() {
               <Heart className="h-5 w-5 text-foreground group-hover:text-primary transition-colors" />
               <span className="text-[10px] font-bold">Wishlist</span>
             </div>
-            <div className="flex flex-col items-center gap-1 cursor-pointer hover:text-primary group">
+            <Link href="/cart" className="flex flex-col items-center gap-1 cursor-pointer hover:text-primary group">
               <div className="relative">
                 <ShoppingBag className="h-5 w-5 text-foreground group-hover:text-primary transition-colors" />
-                <span className="absolute -top-1.5 -right-1.5 bg-destructive text-destructive-foreground text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">0</span>
+                {cartCount > 0 && (
+                  <span className="absolute -top-1.5 -right-1.5 bg-destructive text-destructive-foreground text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center animate-in zoom-in duration-300">
+                    {cartCount}
+                  </span>
+                )}
               </div>
               <span className="text-[10px] font-bold hidden sm:block">Bag</span>
-            </div>
+            </Link>
             <Button variant="ghost" size="icon" className="md:hidden ml-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               <Menu className="h-6 w-6" />
             </Button>
