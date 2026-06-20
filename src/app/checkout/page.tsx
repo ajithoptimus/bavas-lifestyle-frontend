@@ -5,7 +5,8 @@ import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function CheckoutPage() {
   const { items, cartTotal, clearCart } = useCart();

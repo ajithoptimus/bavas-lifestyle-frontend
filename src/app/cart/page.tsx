@@ -16,7 +16,7 @@ export default function CartPage() {
           <ShoppingBag className="w-12 h-12 text-muted-foreground" />
         </div>
         <h1 className="text-2xl font-black uppercase mb-4">Your Bag is Empty</h1>
-        <p className="text-muted-foreground mb-8">Looks like you haven't added anything to your bag yet.</p>
+        <p className="text-muted-foreground mb-8">Looks like you haven&apos;t added anything to your bag yet.</p>
         <Link href="/shop">
           <Button size="lg" className="font-bold uppercase tracking-widest px-8">Continue Shopping</Button>
         </Link>

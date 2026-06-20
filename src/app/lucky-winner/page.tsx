@@ -38,7 +38,7 @@ export default function LuckyWinnerPage() {
             Scratch & Win
           </h1>
           <p className="text-muted-foreground mb-8">
-            Enter the 8-digit lucky code printed on your physical receipt to see if you've won our monthly mega prize!
+            Enter the 8-digit lucky code printed on your physical receipt to see if you&apos;ve won our monthly mega prize!
           </p>
 
           <AnimatePresence mode="wait">
@@ -112,7 +112,7 @@ export default function LuckyWinnerPage() {
                 className="bg-secondary/50 p-8 rounded-xl"
               >
                 <h2 className="font-black text-2xl text-foreground uppercase mb-2">Better Luck Next Time</h2>
-                <p className="text-muted-foreground mb-6">This ticket code didn't win today, but keep shopping for more chances!</p>
+                <p className="text-muted-foreground mb-6">This ticket code didn&apos;t win today, but keep shopping for more chances!</p>
                 <Button variant="outline" className="w-full font-bold uppercase" onClick={() => setStatus('idle')}>
                   Try Another Code
                 </Button>

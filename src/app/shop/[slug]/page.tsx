@@ -1,8 +1,7 @@
 import Image from "next/image";
 import { productsService } from "@/services/products.service";
 import { notFound } from "next/navigation";
-import { Button } from "@/components/ui/button";
-import { Star, Truck, ShieldCheck, Heart } from "lucide-react";
+import { Star, Truck, ShieldCheck } from "lucide-react";
 import { ProductDetailsClient } from "@/components/sections/ProductDetailsClient";
 
 export default async function ProductDetailPage({ params }: { params: Promise<{ slug: string }> }) {
