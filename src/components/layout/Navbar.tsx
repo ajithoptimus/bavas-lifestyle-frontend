@@ -42,10 +42,10 @@ export function Navbar() {
 
           {/* Icons */}
           <div className="flex items-center gap-6 ml-auto">
-            <div className="flex flex-col items-center gap-1 cursor-pointer hover:text-primary group hidden sm:flex">
+            <Link href="/login" className="flex flex-col items-center gap-1 cursor-pointer hover:text-primary group hidden sm:flex">
               <User className="h-5 w-5 text-foreground group-hover:text-primary transition-colors" />
               <span className="text-[10px] font-bold">Profile</span>
-            </div>
+            </Link>
             <div className="flex flex-col items-center gap-1 cursor-pointer hover:text-primary group hidden sm:flex">
               <Heart className="h-5 w-5 text-foreground group-hover:text-primary transition-colors" />
               <span className="text-[10px] font-bold">Wishlist</span>
