@@ -10,9 +10,9 @@ export function Footer() {
             <h3 className="font-serif font-bold text-2xl text-primary-foreground mb-4">BAVAS LIFESTYLE</h3>
             <p className="text-gray-400 mb-4">Fashion For Every Family. Premium lifestyle products at affordable prices.</p>
             <div className="flex gap-4">
-              <Link href="#" className="text-sm hover:text-accent font-medium">Facebook</Link>
-              <Link href="#" className="text-sm hover:text-accent font-medium">Instagram</Link>
-              <Link href="#" className="text-sm hover:text-accent font-medium">Twitter</Link>
+              <Link href="#" className="text-sm hover:text-accent font-medium text-gray-400 transition-colors">Facebook</Link>
+              <Link href="#" className="text-sm hover:text-accent font-medium text-gray-400 transition-colors">Instagram</Link>
+              <Link href="#" className="text-sm hover:text-accent font-medium text-gray-400 transition-colors">Twitter</Link>
             </div>
           </div>
           <div>
