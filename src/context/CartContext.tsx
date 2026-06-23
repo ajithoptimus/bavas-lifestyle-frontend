@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Product } from '@/types/product';
+import { toast } from 'sonner';
 
 export interface CartItem {
   product: Product;
@@ -57,6 +58,14 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         );
       }
       return [...prev, { product, quantity: 1, size }];
+    });
+
+    toast.success(`${product.name} added to your bag`, {
+      description: size ? `Size: ${size}` : undefined,
+      action: {
+        label: "View Bag",
+        onClick: () => window.location.href = "/cart"
+      }
     });
   };
 

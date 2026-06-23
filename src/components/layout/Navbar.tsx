@@ -11,7 +11,7 @@ export function Navbar() {
   const { cartCount } = useCart();
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-background border-b border-border shadow-sm">
+    <header className="sticky top-0 z-50 border-b border-border bg-white/80 backdrop-blur-md shadow-sm transition-all duration-300">
       <div className="container mx-auto px-4">
         <div className="flex items-center h-20 gap-8">
           {/* Logo */}
@@ -87,6 +87,6 @@ export function Navbar() {
           </div>
         </div>
       )}
-    </nav>
+    </header>
   );
 }

@@ -27,6 +27,21 @@
   }
 }
 
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Luxury Typography Polish */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.02em; /* Tighter tracking for standard headers */
+}
+
+.uppercase, h1.uppercase, h2.uppercase, h3.uppercase {
+  letter-spacing: 0.05em; /* Wider tracking for uppercase luxury feel */
+}
+
 @layer base {
   * {
     @apply border-border;
