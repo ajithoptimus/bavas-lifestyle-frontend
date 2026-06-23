@@ -5,16 +5,28 @@ import { ProductCard } from "@/components/common/ProductCard";
 import { productsService } from "@/services/products.service";
 import { Product } from "@/types/product";
 
-export function ShopGrid() {
+export function ShopGrid({ category, collection }: { category?: string, collection?: string }) {
   const [products, setProducts] = useState<Product[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    productsService.getAllProducts().then(data => {
-      setProducts(data);
-      setIsLoading(false);
-    });
-  }, []);
+    if (category) {
+      productsService.getProductsByCategory(category).then(data => {
+        setProducts(data);
+        setIsLoading(false);
+      });
+    } else if (collection) {
+      productsService.getProductsByCollection(collection).then(data => {
+        setProducts(data);
+        setIsLoading(false);
+      });
+    } else {
+      productsService.getAllProducts().then(data => {
+        setProducts(data);
+        setIsLoading(false);
+      });
+    }
+  }, [category, collection]);
 
   if (isLoading) {
     return (
